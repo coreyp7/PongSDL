@@ -28,3 +28,28 @@ There's two timers at the top of the window that will keep track of two things:
  - The IL time for the *current level only*
 
 These will make it a lot easier for you to see how much better you get at getting the box to where you want it to go.
+
+## Building
+
+### Dependencies
+- [MinGW](https://www.mingw-w64.org/) (Only for windows)
+- [Make](https://www.gnu.org/software/make/)
+- [SDL](https://www.libsdl.org/)
+    - SDL_mixer
+    - SDL_ttf
+    - SDL_image
+
+### Windows and Linux
+Using the `make` command, run one of these commands according to your operating system:
+
+```
+make -f Makefile.windows
+```
+
+```
+make -f Makefile.linux
+```
+
+The executable is located in the exe directory.
+
+***NOTE:*** *You have to run the executable file in the base directory of the repo.*
